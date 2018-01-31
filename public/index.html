@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Pokedex</title>
-    
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./lib/pokedex.css">
+
 
     <script src="./lib/jquery.js"></script>
     <script src="./lib/pokedex.js"></script>
@@ -14,16 +15,25 @@
   <body>
 
     <span id="loading">Carregando</span>
-    <div class="pesquisa">
-      <label>Pesquisa</label>
-      <input id="searchText" type="text" placeholder="Digite nome do pokemon">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="pesquisa">
+            <label>Pesquisa</label>
+            <input id="searchText" type="text" placeholder="Digite nome do pokemon">
+          </div>
+
+          <ul id="lista">
+          </ul>
+        </div>
+        <div class="col-xs-6">
+         <section id="detalhes">
+
+          </section>
+        </div>
+      </div>
     </div>
 
-    <ul id="lista">
-    </ul>
-    <section id="detalhes">
-
-    </section>
 
   </body>
 </html>

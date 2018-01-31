@@ -21,7 +21,7 @@ body {
   margin-top: 100px;
   position: fixed;
   text-align: center;
-  width: 14rem;
+  width: 20rem;
 }
 
 #lista {
@@ -29,7 +29,7 @@ body {
   left: 5%;
   position: absolute;
   top: 80px;
-  width: 40%;
+  /* width: 40%; */
 }
 .pesquisa{
   left: 5%;
@@ -64,7 +64,7 @@ body {
   position: absolute;
   right: 5%;
   top: 0;
-  width: 40%;
+  /* width: 40%; */
 }
 #detalhes h1 {
   text-align: center;
@@ -79,7 +79,7 @@ body {
 }
 #foto {
   float: left;
-  width: 30%;
+  width: 80%;
 }
 #foto img {
   width: 100%;
@@ -87,7 +87,7 @@ body {
 
 #stats {
   float: right;
-  width: 60%;
+  width: 100%;
 }
 #stats li {
   display: block;
@@ -101,7 +101,7 @@ body {
 #stats .statItem {
   border: 2px solid red;
   display: block;
-  height: 1.4rem;
+  height: 2.4rem;
   margin-top: 5px;
   position: relative;
   width: 100%;
