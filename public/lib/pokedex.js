@@ -7,6 +7,23 @@ var base = 'https://cors.now.sh/https://pokeapi.co/api/v2/';
 
 function htmlPronto() {
 	carregarLista();
+	$('.pesquisa').hide()
+	$('#searchText').bind('keyup', function() {
+   
+    var searchString = $(this).val();
+
+    $("ul li").each(function(index, value) {
+        
+        currentName = $(value).text()
+        if( currentName.toUpperCase().indexOf(searchString.toUpperCase()) > -1) {
+           $(value).show();
+        } else {
+            $(value).hide();
+        }
+        
+    });
+    
+	});
 }
 
 function mostrarLoading() {
@@ -30,7 +47,7 @@ function carregarLista(){
 	});
 	r.done(montarLista);
 }
-function callback(){}
+
 function montarLista(dados){
 	var imgModelo = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/NUMERO.png';
 
@@ -51,6 +68,7 @@ function montarLista(dados){
 	}
 
 	$("#lista").html(html);
+	$('.pesquisa').show()
 	$("#lista li").on("click", carregarPokemon);
 }
 

@@ -28,8 +28,13 @@ body {
   height: 100%;
   left: 5%;
   position: absolute;
-  top: 0;
+  top: 60px;
   width: 40%;
+}
+.pesquisa{
+  left: 5%;
+  position: absolute;
+  top: 50px;
 }
 #lista li {
   cursor: pointer;
