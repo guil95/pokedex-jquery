@@ -149,7 +149,12 @@ function montarDetalhes(res){
 	if(res.types[1] != undefined){
 		tipo2 = res.types[1].type.name.toUpperCase()
 	}
-
+	let stats1Porcentagem = res.stats[0].base_stat > 100 ? 100 : res.stats[0].base_stat
+	let stats2Porcentagem = res.stats[1].base_stat > 100 ? 100 : res.stats[1].base_stat
+	let stats3Porcentagem = res.stats[2].base_stat > 100 ? 100 : res.stats[2].base_stat
+	let stats4Porcentagem = res.stats[3].base_stat > 100 ? 100 : res.stats[3].base_stat
+	let stats5Porcentagem = res.stats[4].base_stat > 100 ? 100 : res.stats[4].base_stat
+	let stats6Porcentagem = res.stats[5].base_stat > 100 ? 100 : res.stats[5].base_stat
 	html += detalhes
 			.replace('NUMERO', res.id)
 			.replace('NUMEROFOTO', res.id)
@@ -163,17 +168,17 @@ function montarDetalhes(res){
 			.replace('stat5', res.stats[4].stat.name.toUpperCase())
 			.replace('stat6', res.stats[5].stat.name.toUpperCase())
 			.replace('STATVALOR1', res.stats[0].base_stat)
-			.replace('STATVALOR1PORCENTAGEM', res.stats[0].base_stat)
+			.replace('STATVALOR1PORCENTAGEM', stats1Porcentagem)
 			.replace('STATVALOR2', res.stats[1].base_stat)
-			.replace('STATVALOR2PORCENTAGEM', res.stats[1].base_stat)
+			.replace('STATVALOR2PORCENTAGEM', stats2Porcentagem)
 			.replace('STATVALOR3', res.stats[2].base_stat)
-			.replace('STATVALOR3PORCENTAGEM', res.stats[2].base_stat)
+			.replace('STATVALOR3PORCENTAGEM', stats3Porcentagem)
 			.replace('STATVALOR4', res.stats[3].base_stat)
-			.replace('STATVALOR4PORCENTAGEM', res.stats[3].base_stat)
+			.replace('STATVALOR4PORCENTAGEM', stats4Porcentagem)
 			.replace('STATVALOR5', res.stats[4].base_stat)
-			.replace('STATVALOR5PORCENTAGEM', res.stats[4].base_stat)
+			.replace('STATVALOR5PORCENTAGEM', stats5Porcentagem)
 			.replace('STATVALOR6', res.stats[5].base_stat)
-			.replace('STATVALOR6PORCENTAGEM', res.stats[5].base_stat)
+			.replace('STATVALOR6PORCENTAGEM', stats6Porcentagem)
 	esconderLoading();
 	$("#detalhes").html(html)
 	$("#detalhes").show('slow')
