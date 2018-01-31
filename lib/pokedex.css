@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+}
+
+#loading {
+  border: 1px solid #000000;
+  background: black;
+  color: white;
+  display: none;
+  font-size: 1rem;
+  left: 50%;
+  line-height: 3rem;
+  margin-left: -7rem;
+  margin-top: 100px;
+  position: fixed;
+  text-align: center;
+  width: 14rem;
+}
+
+#lista {
+  height: 100%;
+  left: 5%;
+  position: absolute;
+  top: 0;
+  width: 40%;
+}
+#lista li {
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin: 0 2.5%;
+  width: 20%;
+}
+#lista li:hover {
+  background-color: #F08030;
+}
+#lista li img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+#lista li span {
+  background-color: rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#detalhes {
+  display: none;
+  height: 100%;
+  position: absolute;
+  right: 5%;
+  top: 0;
+  width: 40%;
+}
+#detalhes h1 {
+  text-align: center;
+}
+#tipos {
+  margin: 20px;
+  text-align: center;
+}
+#tipos li {
+  background: red;
+  display: inline-block;
+}
+#foto {
+  float: left;
+  width: 30%;
+}
+#foto img {
+  width: 100%;
+}
+
+#stats {
+  float: right;
+  width: 60%;
+}
+#stats li {
+  display: block;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+#stats strong {
+  color: #000;
+  display: block;
+}
+#stats .statItem {
+  border: 2px solid red;
+  display: block;
+  height: 1.4rem;
+  margin-top: 5px;
+  position: relative;
+  width: 100%;
+}
+#stats .statValor {
+  color: #FFF;
+  display: block;
+  left: 5px;
+  position: absolute;
+  top: 1px;
+  z-index: 2;
+}
+#stats .statGrafico {
+  background: red;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
