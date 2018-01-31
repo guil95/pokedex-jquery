@@ -3,7 +3,7 @@
 
 $(window).ready(htmlPronto);
 
-var base = 'http://pokeapi.salestock.net/api/v2/';
+var base = 'https://cors.now.sh/https://pokeapi.co/api/v2/';
 
 function htmlPronto() {
 	carregarLista();
